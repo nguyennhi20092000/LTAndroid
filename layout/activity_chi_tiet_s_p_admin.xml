@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.Admin.XemSanPham.ChiTietSPAdminActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"></androidx.appcompat.widget.Toolbar>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipperChitietSP"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/purple_200">
+
+
+
+            </ViewFlipper>
+            <RelativeLayout
+                android:id="@+id/manhinhButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_below="@id/toolbarChiTiet"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnPreviuos"
+                    android:layout_width="42dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_gravity="left"
+                    android:background="#00B61414"
+                    android:src="@android:drawable/ic_media_rew"
+                    android:onClick="OnClick"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="42dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="0dp"
+                    android:background="#00000000"
+                    android:onClick="OnClick"
+                    android:src="@android:drawable/ic_media_ff"></ImageButton>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_TenSPChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewFlipperChitietSP"
+                android:layout_margin="20dp"
+                android:text="Tên Sản Phẩm"
+                android:textColor="@color/black"
+                android:textSize="20sp"></TextView>
+
+
+            <TextView
+                android:id="@+id/txt_GiaCTSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_TenSPChiTiet"
+                android:layout_marginLeft="20dp"
+                android:text="Giá"
+                android:textColor="#F10C0C"
+                android:textSize="25sp"></TextView>
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarChonHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_GiaCTSP"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTiltleHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn loại hàng"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"></TextView>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/contentMota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbarChonHang"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Mô tả sản phẩm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtMotaChiTietSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="20sp"></TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

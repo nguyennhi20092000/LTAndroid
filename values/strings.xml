@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppBanHangNew</string>
+    <string name="menuhometitle">Home</string>
+    <string name="menulienhe">Liên hê</string>
+    <string name="menuToi">Tôi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">989505825135224</string>
+</resources>

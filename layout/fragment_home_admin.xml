@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".action.Admin.FragmentAdmin.HomeAdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADMIN"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textColor="@color/purple_700"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDanhSachSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:title="Danh Sách Sản Phẩm"
+                app:menu="@menu/menu_toolbar"></androidx.appcompat.widget.Toolbar>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarThaoTacQuanLy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:title="Thao tác quản lý"
+                app:menu="@menu/menu_toolbar"></androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarTheoDoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:title="Theo dõi sản phẩm"
+                app:menu="@menu/menu_toolbar"></androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarTrangthaidonhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:title="Trạng thái đơn hàng "
+                app:menu="@menu/menu_toolbar"></androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

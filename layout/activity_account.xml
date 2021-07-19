@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.User_Admin.Account.AccountActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:id="@+id/Dangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="ĐĂNG NHẬP"
+            android:textSize="30sp"
+            android:layout_below="@id/imgLogo"
+            android:layout_marginLeft="125dp"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Dangnhap"
+            android:id="@+id/TILSodienthoai"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtSodienthoai"
+                android:hint="Nhập vào số điện thoại"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TILSodienthoai"
+            android:id="@+id/TILPassword"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtPassword"
+                android:hint="Nhập vào password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/TILPassword"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radioUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:layout_marginLeft="100dp"></RadioButton>
+        </RadioGroup>
+        <Button
+            android:id="@+id/buttonDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/purple_500"
+            android:onClick="onClick"
+            android:text="Đăng nhập"
+            android:textColor="@color/white"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/buttonDangKy"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_marginStart="96dp"
+
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/buttonDangNhap"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:onClick="onClick"
+            android:text="Đăng Ký"
+            android:textColor="@color/white"
+            android:textSize="20sp"></Button>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

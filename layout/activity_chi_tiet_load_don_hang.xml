@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.User.DonHang.ChiTietLoadDonHangActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChiTietDonHang"
+        app:title="Chi Tiết Đơn Hàng"
+        android:layout_width="match_parent"
+        android:background="@color/purple_500"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtngaythang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày tháng"
+            android:textColor="#F43333"
+            android:textSize="20dp"></TextView>
+        <ListView
+            android:id="@+id/listchitietdonhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtngaythang"
+            android:orientation="vertical"></ListView>
+        <TextView
+            android:id="@+id/txtthanhtienchoxacnhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền:"
+            android:textSize="20dp"
+            android:layout_below="@id/listchitietdonhang"
+            android:textColor="#F32727"></TextView>
+
+    </RelativeLayout>
+</LinearLayout>

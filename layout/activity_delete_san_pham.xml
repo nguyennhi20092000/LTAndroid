@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.Admin.ThaoTacQuanLy.Delete.DeleteSanPhamActivity"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/contentLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/ToolbarDeletesp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@color/purple_700"
+                    android:title="Hoa"
+                    android:titleTextColor="#F344DAAA"
+                    app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="139dp"
+                    android:layout_height="131dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo"></ImageView>
+
+                <TextView
+                    android:id="@+id/Thongtin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:layout_margin="20sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="THAO TÁC XÓA  SẢN PHẨM"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20sp"
+                        android:text="Loại sản phẩm:"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"></TextView>
+
+                    <Spinner
+
+                        android:id="@+id/spinnerLoaiSP"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20sp"
+                        android:text="Sản phẩm"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"></TextView>
+
+                    <Spinner
+
+                        android:id="@+id/spinnerSP"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"></Spinner>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TILEditTenSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Thongtin"
+                    android:layout_marginTop="5dp"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEdittenSP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nhập vào tên sản phẩm"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TILEditLinkSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Thongtin"
+                    android:layout_marginTop="5dp"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEditlinkchitietSP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nhập vào link hình ảnh minh họa "
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TILEditMotaChiTietSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Thongtin"
+                    android:layout_marginTop="5dp"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtEditgiachitietSP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nhập vào mô tả hình ảnh "
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEditSP"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="@color/purple_700"
+                android:text="DELETE"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

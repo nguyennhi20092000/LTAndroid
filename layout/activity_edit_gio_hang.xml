@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.User.GioHang.EditGioHangActivity"
+    android:orientation="vertical"
+    android:background="#B9ECF1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <ImageView
+            android:id="@+id/imgSP"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/noimage"></ImageView>
+        <TextView
+            android:id="@+id/txtTenSPGio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Sản Phẩm"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#DC0C0C"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/txtGiaSPGH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá sản phẩm:"
+            android:textSize="20sp"
+            android:textColor="#EC5959"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng hiện tại:"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:id="@+id/txtSoluonghientai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"></TextView>
+        </LinearLayout>
+
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Thêm:"
+               android:textSize="20sp"></TextView>
+           <Spinner
+               android:id="@+id/spinnerThem"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"></Spinner>
+       </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtthanhtien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền:"
+            android:textSize="20sp"
+            android:textColor="#F65959"></TextView>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

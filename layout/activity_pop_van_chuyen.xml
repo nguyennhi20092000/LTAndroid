@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.User.SanPham.PopVanChuyenActivity"
+    android:orientation="vertical"
+    android:background="#CAEDE9">
+    <TextView
+        android:id="@+id/txtTiltle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Phí Vận Chuyển"
+        android:textColor="@color/black"
+        android:textSize="20sp"></TextView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolBar_DiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTiltle"
+        app:menu="@menu/menu_toolbar"
+        app:title="Vận chuyển đến"></androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Giá vận chuyển đơn hàng: "
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtTiltileGHTK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:layout_alignParentRight="true"
+            android:text="22.000-35.000"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="6dp"
+            android:background="#F4F0A2"
+            android:text="OK"
+            android:textColor="@color/black"></Button>
+    </RelativeLayout>
+</LinearLayout>

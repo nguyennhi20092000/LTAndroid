@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action.Admin.TheoDoiSP.ChartHoatDongActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbieudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Xem biểu đồ danh thu"
+        android:background="@color/purple_500"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/combinedChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btnthisyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This year"></Button>
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"></Button>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"></Button>
+        <Button
+            android:id="@+id/btnAllYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AllYear"></Button>
+    </LinearLayout>
+</LinearLayout>
